@@ -108,7 +108,7 @@ npm run dev
 O sistema foi migrado parcialmente do Firebase Firestore para Supabase para otimizar custos e performance:
 
 - **Firebase mantido**: Autenticação de usuários e sistema de notificações
-- **Supabase implementado**: Armazenamento e consulta de tickets do Virtua
+- **Supabase implementado**: Armazenamento e consulta de tickets
 - **Motivo**: Redução de custos de leitura do Firebase Firestore
 
 ### Estrutura dos Dados - Tickets
@@ -175,7 +175,7 @@ VITE_SUPABASE_ANON_KEY=your-anon-key
 - ✅ **Sistema de Notificações Completo**: Tempo real com painel admin
 - ✅ **Autenticação Firebase Completa**: Login, cadastro, verificação de email
 - ✅ **Dashboard com Métricas**: Cards em tempo real e seletor de carteira
-- ✅ **Sistema de Tickets Virtua**: Consulta, filtros e atualização de status
+- ✅ **Sistema de Tickets**: Consulta, filtros e atualização de status
 - ✅ **Monitoramento de Importações**: Status de 16 carteiras com execução automática
 - ✅ **Tema Dark/Light**: Alternância automática com persistência
 - ✅ **Interface Responsiva**: Adaptada para desktop e mobile
@@ -195,7 +195,7 @@ VITE_SUPABASE_ANON_KEY=your-anon-key
 - **CarteiraSelector**: Dropdown para seleção de carteira
 - **RecentActivity**: Lista de atividades recentes com timestamps
 
-## 🎫 Sistema de Tickets Virtua
+## 🎫 Sistema de Tickets
 
 ### Funcionalidades
 - ✅ **Consulta de Tickets**: Busca e filtro completo
@@ -271,7 +271,7 @@ VITE_SUPABASE_ANON_KEY=your-anon-key
 - **Supabase** - Banco de dados para tickets (migrado de Firebase Firestore)
 - **Coleções/Tabelas**:
   - `notificacoes` (Firebase) - Sistema de notificações
-  - `tickets` (Supabase) - Dados dos tickets do Virtua
+  - `tickets` (Supabase) - Dados dos tickets do
 
 ## 📝 Scripts Disponíveis
 
@@ -321,7 +321,7 @@ service cloud.firestore {
 - Atividade recente
 - Acesso rápido às principais funções
 
-### Consulta Tickets Virtua
+### Consulta Tickets
 - Busca e filtro de tickets
 - Atualização de status
 - Estatísticas por categoria
@@ -382,12 +382,12 @@ Para dúvidas ou problemas, verifique:
 - **Vite** como bundler
 
 ### Serviços
-- **VirtuaService**: Simulação da API da plataforma Virtua
+- **Service**: Simulação da API da plataforma
 - **useDashboardData**: Hook personalizado para gerenciamento de estado
 - **Mock Data**: Dados de exemplo para demonstração
 
 ### Componentes Principais
-- `ConsultaTicketsVirtua`: Página principal de tickets
+- `ConsultaTickets`: Página principal de tickets
 - `Home`: Dashboard com métricas e resumo
 - `Sidebar`: Navegação entre módulos
 - `RecentActivity`: Atividades recentes do sistema
@@ -396,7 +396,7 @@ Para dúvidas ou problemas, verifique:
 
 ### 1. Navegação
 - Use o menu lateral para navegar entre as diferentes seções
-- A seção "Consulta Tickets Virtua" é a nova funcionalidade principal
+- A seção "Consulta Tickets" é a nova funcionalidade principal
 
 ### 2. Consulta de Tickets
 - **Busca**: Digite no campo de busca para encontrar tickets específicos
@@ -516,10 +516,10 @@ backend/
 └── package.json        # Dependências backend
 ```
 
-## Integração com Virtua
+## Integração com
 
 ### Serviço Simulado
-O `VirtuaService` simula a integração com a API real da plataforma Virtua:
+O `Service` simula a integração com a API real da plataforma:
 
 - **getTickets()**: Busca todos os tickets
 - **getTicketsByCarteira()**: Filtra por carteira
@@ -528,9 +528,9 @@ O `VirtuaService` simula a integração com a API real da plataforma Virtua:
 - **getTicketStats()**: Estatísticas consolidadas
 
 ### Implementação Real
-Para integrar com a API real do Virtua:
+Para integrar com a API real do:
 
-1. Substitua as chamadas mock no `VirtuaService`
+1. Substitua as chamadas mock no `Service`
 2. Configure endpoints e autenticação
 3. Implemente tratamento de erros adequado
 4. Adicione cache e otimizações de performance
@@ -541,7 +541,7 @@ Para integrar com a API real do Virtua:
 - 🔄 **Push Notifications**: Notificações push no navegador
 - 🔄 **Relatórios Avançados**: Gráficos e exportação PDF/Excel
 - 🔄 **Sistema de Comentários**: Interação nos tickets
-- 🔄 **Integração API Externa**: Conexão real com Virtua
+- 🔄 **Integração API Externa**: Conexão real com
 - 🔄 **Dashboard Executivo**: KPIs avançados e analytics
 - 🔄 **PWA**: Aplicativo web progressivo
 - 🔄 **Testes Automatizados**: Cobertura completa de testes
@@ -578,4 +578,5 @@ Para dúvidas ou problemas:
 **Versão**: 3.0.0  
 **Última Atualização**: Janeiro 2025  
 **Status**: ✅ Sistema Completo e Funcional  
+
 **Plataforma**: Portal de Processamento com Firebase 
